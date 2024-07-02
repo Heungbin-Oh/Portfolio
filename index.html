@@ -6,8 +6,8 @@
     <meta name="description" content="Portfolio" />
     <meta name="author" content="Heungbin Oh" />
     
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-    <link rel="script" type="text/javascript" href="./js/script.js" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>Heungbin_Oh</title>
   </head>
   
@@ -67,35 +67,36 @@
             <!-- Details -->
             <div class="tab">
               <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" data-tab="experience" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" data-tab="education" onclick="opentab('education')">Education</p>
               </div>
               <div class="tab-contents active-tab" id="skills">
                 <ul>
-                    <li><span>Front-End</span><br> JavaScript, HTML, CSS</li>
-                    <li><span>Back-End</span><br>Phython, Java, C++</li>
-                    <li><span>Database Management</span><br>SQL</li>
-                    
+                  <li><span>Front-End</span><br> JavaScript, HTML, CSS</li>
+                  <li><span>Back-End</span><br>Phython, Java, C++</li>
+                  <li><span>Database Management</span><br>SQL</li>
                 </ul>
               </div>
               <div class="tab-contents" id="experience">
-                  <ul>
-                      <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
-                      <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
-                      <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
-                      <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
-                  </ul>
+                <ul>
+                  <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
+                  <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
+                  <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
+                  <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
+                </ul>
               </div>
               <div class="tab-contents" id="education">
                 <ul>
-                    <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
-                    <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
-                    <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
-                    <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
+                  <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
+                  <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
+                  <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
+                  <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
                 </ul>
               </div>
             </div>
+            
+            
           </section>
         </div>
       </section>

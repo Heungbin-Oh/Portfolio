@@ -49,37 +49,29 @@ document.querySelectorAll('input[name="about"]').forEach((radio) => {
   });
 });
 
-// Function to display navigation list
-const displayList = () => {
-  const navUl = document.querySelector(".nav__list");
-  const btns = document.getElementById("btns");
-
-  if (btns.classList.contains("fa-bars")) {
-    btns.classList.remove("fa-bars");
-    btns.classList.add("fa-times");
-    navUl.classList.add("display-nav-list");
-  } else {
-    btns.classList.remove("fa-times");
-    btns.classList.add("fa-bars");
-    navUl.classList.remove("display-nav-list");
-  }
-};
 
 // Add event listener for navigation button
 const btns = document.getElementById("btns");
 btns.addEventListener("click", displayList);
 
 // About part Function 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
+function opentab(tabname) {
+  
+  const tablinks = document.querySelectorAll(".tab-links");
+  const tabcontents = document.querySelectorAll(".tab-contents");
+
+  
+  tablinks.forEach(tablink => tablink.classList.remove("active-link"));
+  tabcontents.forEach(tabcontent => tabcontent.classList.remove("active-tab"));
+
+  
+  const selectedTab = document.getElementById(tabname);
+  const selectedTabLink = document.querySelector(`.tab-links[data-tab="${tabname}"]`);
+
+  if (selectedTab && selectedTabLink) {
+    selectedTabLink.classList.add("active-link");
+    selectedTab.classList.add("active-tab");
+  }
 }
+
