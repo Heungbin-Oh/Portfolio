@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <meta name="author" content="Heungbin Oh" />
+    
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="script" type="text/javascript" href="./js/script.js" />
+    <title>Heungbin_Oh</title>
+  </head>
+  
+  <body class="body" id="top">
+    <header class="header center">
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#info">About Me</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <main>
+
+      <div class="about center">
+        <div class="about__img">
+          <figure>
+            <img width="300px" src="img/Heungbin_Oh.jpg">
+          </figure>
+        </div>
+        <div class="about__context">
+          <h1><span class="about__name"><b>Heungbin Oh</b></span></h1>
+          <h2 class="about__role">Backend Developer</h2>
+          <p class="about__desc">
+            Promising Backend Developer with civil engineering knowledge as well.
+          </p>
+
+          <div class="about__contact center">
+            <a href="./Resume.pdf" target="_blank">
+                <span class="btn btn--outline">Resume</span>
+            </a>
+            <a href="#contact">
+                <span class="btn btn--outline">Contact</span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="empty-row"></div>
+      <!-- About -->
+      <section id="info" class="section info">
+        <div>
+          <h2 class="section__title">About me</h2>
+          <section class="subsection">
+            <div class="context__overall">
+              <p>pationate about </p>
+            </div>
+            <!-- Details -->
+            <div class="tab">
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Front-End</span><br> JavaScript, HTML, CSS</li>
+                    <li><span>Back-End</span><br>Phython, Java, C++</li>
+                    <li><span>Database Management</span><br>SQL</li>
+                    
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                  <ul>
+                      <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
+                      <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
+                      <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
+                      <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
+                  </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
+                    <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
+                    <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
+                    <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- Education -->
+      <section class="section" id="education">
+        <div>
+        <h2 class="section__title">Education</h2>
+        <section class="education_list">
+          <section class="education">
+            <h3>Seneca Polytechnic</h3>
+            <p>Computer Programming & Analysis</p>
+            <span>2026 (expected)</span>
+          </section>
+
+          <section class="education">
+            <h3>Korea National University of Transportation</h3>
+            <p>Railway Civil Engineering</p>
+            <span>2020</span>
+          </section>
+        </section>  
+        </div>
+      </section>
+      <div class="divider"></div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <div>
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>WEB Assignment 5</h3>
+            <p class="project__description">
+              Creating website for Iceskating
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Html</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+
+      
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div>
+      <h2 class="section__title">Contact Me</h2>
+      <form id="form">
+        <div>
+          <label for="name">Name *</label>
+          <input value="" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="company">Company *</label>
+          <input value="" name="company" id="company" required />
+        </div>
+        
+        <div>
+          <label for="email">Email Address *</label>
+          <input value="" name="email" id="email" type="email" required />
+        </div>
+        <div>
+          <label for="add">Address *</label>
+          <input value="" name="add" id="add" required />
+        </div>
+        <div>
+          <label for="city">City *</label>
+          <input value="" name="city" list="cities" id="city" required />
+          <datalist id="cities">
+            <option value="Toronto" />
+            <option value="Barrie" />
+            <option value="Vancouver" />
+            <option value="Mississauga" />
+            <option value="Ottawa" />
+          </datalist>
+        </div>
+        <div>
+          <label for="postal">Postal Code *</label>
+          <input
+            value=""
+            name="postal"
+            id="postal"
+            pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
+            required
+          />
+        </div>
+        <div>
+          <label>What is this about? *</label>
+          <fieldset id="about">
+            <span>
+              <input
+                id="question"
+                type="radio"
+                value="Question"
+                name="about"
+                required
+              />
+              <label for="question">Question</label>
+            </span>
+            <span>
+              <input
+                id="comment"
+                type="radio"
+                value="Comment"
+                name="about"
+                required
+              />
+              <label for="comment">Comment</label>
+            </span>
+            <span>
+              <input
+                id="hiring"
+                type="radio"
+                value="Hiring"
+                name="about"
+                required
+              />
+              <label for="hiring">Hiring</label>
+            </span>
+          </fieldset>
+        </div>
+
+        <div id="rateDiv" style="display: none">
+          <label for="rateInput" id="rateLabel">Hourly Rate *</label>
+          <div>
+            <input type="number" min="0" step="0.25" name="rate" id="rateInput" required />
+          </div>
+        </div>
+      
+        <div>
+          <label for="message">Message *</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--outline">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+    <footer class="footer">
+    </footer>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
