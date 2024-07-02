@@ -214,15 +214,14 @@ main {
   bottom: -8px;
   transition: 0.5s;
 }
-.tab-links.active-link {
-  font-weight: bold; 
-}
 
 .tab-contents {
   display: none; 
   padding: 20px; 
 }
-
+.tab-links.active-link {
+  font-weight: bold; 
+}
 .tab-contents.active-tab {
   display: block; 
 }
