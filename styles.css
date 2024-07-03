@@ -222,12 +222,14 @@ main {
 .tab-contents {
   display: none; 
   padding: 20px; 
-  width: 650px;
+  width: 700px;
 }
+
 .tab-contents span{
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.6);;
+  color: rgba(0, 0, 0, 0.9);;
 }
+
 .tab-links.active-link {
   font-weight: bold; 
 }
@@ -235,7 +237,10 @@ main {
   display: block; 
 }
 
-
+#skills li{
+  display: block;
+  margin-bottom: 7px;
+}
 .section {
   display: grid;
   place-items: center;
@@ -328,7 +333,7 @@ main {
 .project {
   display: flex;
   padding: 2em;
-  margin: 0 auto;
+  margin: 0 20px;
   text-align: center;
   align-items: center;
   box-shadow: var(--shadow);
