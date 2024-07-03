@@ -9,12 +9,16 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js" defer></script>
     <title>Heungbin_Oh</title>
+    <script src="https://kit.fontawesome.com/f5ca4c0abd.js" crossorigin="anonymous"></script>
   </head>
   
   <body class="body" id="top">
     <header class="header center">
       <nav class="nav center">
         <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#home">Home</a>
+          </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#info">About Me</a>
           </li>
@@ -30,7 +34,7 @@
 
   <main>
 
-      <div class="about center">
+      <div id="home" class="about center">
         <div class="about__img">
           <figure>
             <img width="300px" src="img/Heungbin_Oh.jpg">
@@ -52,10 +56,9 @@
             </a>
           </div>
         </div>
-        
       </div>
-
-      <div class="empty-row"></div>
+      <div class="divider"></div>
+      
       <!-- About -->
       <section id="info" class="section info">
         <div>
@@ -88,10 +91,18 @@
               </div>
               <div class="tab-contents" id="education">
                 <ul>
-                  <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
-                  <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
-                  <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
-                  <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
+                  <li>
+                    <span>Seneca Polytechnic</span>
+                    <br>Computer Programming & Analysis
+                    <br>2026(Expected)
+                    <br>- GPA: 3.9 / 4.0
+                  </li>
+                  <li>
+                    <span>Korea National University of Transportation</span>
+                    <br>Railway Civil Engineering
+                    <br>2020
+                    <br>- GPA: 3.9 / 4.5
+                  </li>
                 </ul>
               </div>
             </div>
@@ -103,26 +114,7 @@
 
       <div class="divider"></div>
 
-      <!-- Education -->
-      <section class="section" id="education">
-        <div>
-        <h2 class="section__title">Education</h2>
-        <section class="education_list">
-          <section class="education">
-            <h3>Seneca Polytechnic</h3>
-            <p>Computer Programming & Analysis</p>
-            <span>2026 (expected)</span>
-          </section>
-
-          <section class="education">
-            <h3>Korea National University of Transportation</h3>
-            <p>Railway Civil Engineering</p>
-            <span>2020</span>
-          </section>
-        </section>  
-        </div>
-      </section>
-      <div class="divider"></div>
+      
 
       <!-- Projects -->
       <section id="projects" class="section projects">
@@ -131,15 +123,22 @@
 
         <div class="projects__grid">
           <div class="project">
-            <h3>WEB Assignment 5</h3>
-            <p class="project__description">
-              Creating website for Iceskating
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Html</li>
-              <li class="project__stack-item">JavaScript</li>
-              <li class="project__stack-item">CSS</li>
-            </ul>
+            <div class="prj__img">
+              <img src="img/kokoa-logo.png" />
+            </div>
+            <div class="prj__1">
+              <h3>Kokoa Clone Project</h3>
+              <a href="https://heungbin-oh.github.io/kokoa-clone/"
+              class="prj__link">Kokoa Clone link</a>
+              <p class="project__description">
+                Create Clone Kokoa pages in mobile size
+              </p>
+              
+              <ul class="project__stack">
+                <li class="project__stack-item">Html</li>
+                <li class="project__stack-item">CSS</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -147,107 +146,36 @@
 
       
   <!-- Contact -->
-  <section class="section contact" id="contact">
-    <div>
-      <h2 class="section__title">Contact Me</h2>
-      <form id="form">
-        <div>
-          <label for="name">Name *</label>
-          <input value="" name="name" id="name" required />
-        </div>
-        <div>
-          <label for="company">Company *</label>
-          <input value="" name="company" id="company" required />
-        </div>
-        
-        <div>
-          <label for="email">Email Address *</label>
-          <input value="" name="email" id="email" type="email" required />
-        </div>
-        <div>
-          <label for="add">Address *</label>
-          <input value="" name="add" id="add" required />
-        </div>
-        <div>
-          <label for="city">City *</label>
-          <input value="" name="city" list="cities" id="city" required />
-          <datalist id="cities">
-            <option value="Toronto" />
-            <option value="Barrie" />
-            <option value="Vancouver" />
-            <option value="Mississauga" />
-            <option value="Ottawa" />
-          </datalist>
-        </div>
-        <div>
-          <label for="postal">Postal Code *</label>
-          <input
-            value=""
-            name="postal"
-            id="postal"
-            pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
-            required
-          />
-        </div>
-        <div>
-          <label>What is this about? *</label>
-          <fieldset id="about">
-            <span>
-              <input
-                id="question"
-                type="radio"
-                value="Question"
-                name="about"
-                required
-              />
-              <label for="question">Question</label>
-            </span>
-            <span>
-              <input
-                id="comment"
-                type="radio"
-                value="Comment"
-                name="about"
-                required
-              />
-              <label for="comment">Comment</label>
-            </span>
-            <span>
-              <input
-                id="hiring"
-                type="radio"
-                value="Hiring"
-                name="about"
-                required
-              />
-              <label for="hiring">Hiring</label>
-            </span>
-          </fieldset>
-        </div>
-
-        <div id="rateDiv" style="display: none">
-          <label for="rateInput" id="rateLabel">Hourly Rate *</label>
-          <div>
-            <input type="number" min="0" step="0.25" name="rate" id="rateInput" required />
-          </div>
-        </div>
-      
-        <div>
-          <label for="message">Message *</label>
-          <textarea name="message" id="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn--outline">Submit</button>
-      </form>
+  <div id="contact">
+    <h2 class="section__title">Contact Me!</h2>
+    <div class="contact__box">
+      <div class="contact__context">
+        <i class="fa-regular fa-envelope fa-2x"></i> 
+        <a href="mailto:orane5050@gmail.com" class="contact-link" target="_blank">
+          <span>orane5050@gmail.com</span>
+        </a>
+      </div>
+      <div class="contact__context">
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+        <a href="https://www.linkedin.com/in/%ED%9D%A5%EB%B9%88-%EC%98%A4-25047322a/" class="contact-link" target="_blank">
+          <span>Linkedin</span>
+        </a>
+      </div>
+      <div class="contact__context">
+        <i class="fa-solid fa-phone fa-2x"></i>
+        <span>416-817-7678</span>
+      </div>
     </div>
-  </section>
-
-  </main>
+    
+    
+  </div>
+  
+</main>
 
     <footer class="footer">
     </footer>
 
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
