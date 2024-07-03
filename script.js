@@ -56,22 +56,24 @@ btns.addEventListener("click", displayList);
 
 // About part Function 
 
-function opentab(tabname) {
-  
-  const tablinks = document.querySelectorAll(".tab-links");
-  const tabcontents = document.querySelectorAll(".tab-contents");
+function opentab(sectionId, tabname) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
 
-  
+  const tablinks = section.querySelectorAll(".tab-links");
+  const tabcontents = section.querySelectorAll(".tab-contents");
+
   tablinks.forEach(tablink => tablink.classList.remove("active-link"));
   tabcontents.forEach(tabcontent => tabcontent.classList.remove("active-tab"));
 
-  
-  const selectedTab = document.getElementById(tabname);
-  const selectedTabLink = document.querySelector(`.tab-links[data-tab="${tabname}"]`);
+  const selectedTabLink = section.querySelector(`.tab-links[data-tab="${tabname}"]`);
+  const selectedTab = section.querySelector(`#${tabname}`);
 
-  if (selectedTab && selectedTabLink) {
+  if (selectedTabLink && selectedTab) {
     selectedTabLink.classList.add("active-link");
     selectedTab.classList.add("active-tab");
   }
 }
+
+
 

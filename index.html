@@ -70,12 +70,13 @@
             <!-- Details -->
             <div class="tab">
               <div class="tab-titles">
-                <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" data-tab="experience" onclick="opentab('experience')">Work Experience</p>
-                <p class="tab-links" data-tab="certification" onclick="opentab('certification')">Certification</p>
-                <p class="tab-links" data-tab="education" onclick="opentab('education')">Education</p>
-                <p class="tab-links" data-tab="honours-awards" onclick="opentab('honours-awards')">Honours and Awards</p>
+                <p class="tab-links active-link" data-tab="skills" onclick="opentab('info', 'skills')">Skills</p>
+                <p class="tab-links" data-tab="experience" onclick="opentab('info', 'experience')">Work Experience</p>
+                <p class="tab-links" data-tab="certification" onclick="opentab('info', 'certification')">Certification</p>
+                <p class="tab-links" data-tab="education" onclick="opentab('info', 'education')">Education</p>
+                <p class="tab-links" data-tab="honours-awards" onclick="opentab('info', 'honours-awards')">Honours and Awards</p>
               </div>
+
               <div class="tab-contents active-tab" id="skills">
                 <ul>
                   <li><span>Front-End</span><br> JavaScript, HTML, CSS</li>
@@ -158,39 +159,104 @@
       <!-- Projects -->
       <section id="projects" class="section projects">
         <div>
-        <h2 class="section__title">Projects</h2>
+          <h2 class="section__title">Projects</h2>
+          <!-- Project Tab -->
+          <div class="tab">
+            <div class="tab-titles">
+              <p class="tab-links active-link" data-tab="software" onclick="opentab('projects', 'software')">Software</p>
+              <p class="tab-links" data-tab="civil" onclick="opentab('projects', 'civil')">Civil Engineering</p>
+            </div>
+            <!-- Software Section -->
+            <div class="tab-contents active-tab" id="software">
+              <div class="projects__grid">
+                <!-- Project 1 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/kokoa-logo.png" alt="Kokoa Clone Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Kokoa Clone</h3>
+                    <a href="https://heungbin-oh.github.io/kokoa-clone/" class="prj__link" target="_blank">Kokoa Clone link</a>
+                    <p class="project__description">
+                      Create Clone Kokoa pages in mobile size
+                    </p>
+                    <a href="https://github.com/Heungbin-Oh/kokoa-clone" class="prj__link" target="_blank">GitHub link</a>
+                  </div>
+                </div>
 
-        <div class="projects__grid">
-          <!-- project 1 -->
-          <div class="project">
-            <div class="prj__img">
-              <img src="img/kokoa-logo.png" />
+                <!-- Project 2 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/hackathon-logo.png" alt="Seneca Hackathon Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Seneca Hackathon</h3>
+                    <a href="https://github.com/Heungbin-Oh/Seneca-Hackathon-2024" class="prj__link" target="_blank">GitHub link</a>
+                    <p class="project__description">
+                      Solving Student Housing Issue 2024
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="prj__content">
-              <h3>Kokoa Clone</h3>
-              <a href="https://heungbin-oh.github.io/kokoa-clone/" class="prj__link">Kokoa Clone link</a>
-              <p class="project__description">
-                Create Clone Kokoa pages in mobile size
-              </p>
-              <ul class="project__stack">
-                <li class="project__stack-item">HTML</li>
-                <li class="project__stack-item">CSS</li>
-              </ul>
+
+            <!-- Civil -->
+            <div class="tab-contents" id="civil">
+              <div class="projects__grid">
+                <!--Project 1 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/shinansan_line_logo.png" alt="Seneca Hackathon Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Detailed Design Railway Construction</h3>
+                    <p class="project__description">
+                      <span class="prj_duration">July 2020 - July 2021</span>
+                      <br><br>
+                      Client: Nextrain Co., Ltd 
+                    </p>
+                    <a href="./documents/shinansan.pdf" class="prj__link" target="_blank">Details</a>
+                  </div>
+                </div>
+                <!--Project 2 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/kind_logo.jpeg" alt="Seneca Hackathon Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Pre–F/S Saudi Arabia–Bahrain</h3>
+                    <p class="project__description">
+                      <span class="prj_duration">May 2021 - September 2021</span>
+                      <br><br>
+                      Client: KIND
+                    </p>
+                    <a href="./documents/saudi-arabia__bahrain.pdf" class="prj__link" target="_blank">Details</a>
+                  </div>
+                </div>
+                <!--Project 3 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/rahco_logo.jpeg" alt="Seneca Hackathon Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Design, Supervision and Management of SGR</h3>
+                    <p class="project__description">
+                      <span class="prj_duration">August 2021 - July 2022</span>
+                      <br><br>
+                      Client: Reli Asset Holding Company(RAHCO) 
+                    </p>
+                    <a href="./documents/tanzania.pdf" class="prj__link" target="_blank">Details</a>
+                  </div>
+                </div>
+                
+    
+              </div>
             </div>
+
+
           </div>
-          <!-- project 2 -->
-          <div class="project">
-            <div class="prj__content">
-              <h3>Seneca Hackathon</h3>
-              <a href="https://heungbin-oh.github.io/kokoa-clone/" class="prj__link">GitHub link</a>
-              <p class="project__description">
-                Solving Student Housing Issue 
-              </p>
-            </div>
-          </div>
-        </div>
-        
       </section>
+      
       <div class="divider"></div>
 
       
@@ -219,7 +285,7 @@
     
   </div>
   
-</main>
+  </main>
 
     <footer class="footer">
     </footer>
