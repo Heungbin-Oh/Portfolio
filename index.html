@@ -9,12 +9,16 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js" defer></script>
     <title>Heungbin_Oh</title>
+    <script src="https://kit.fontawesome.com/f5ca4c0abd.js" crossorigin="anonymous"></script>
   </head>
   
   <body class="body" id="top">
     <header class="header center">
       <nav class="nav center">
         <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#home">Home</a>
+          </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#info">About Me</a>
           </li>
@@ -30,7 +34,7 @@
 
   <main>
 
-      <div class="about center">
+      <div id="home" class="about center">
         <div class="about__img">
           <figure>
             <img width="300px" src="img/Heungbin_Oh.jpg">
@@ -38,13 +42,13 @@
         </div>
         <div class="about__context">
           <h1><span class="about__name"><b>Heungbin Oh</b></span></h1>
-          <h2 class="about__role">Backend Developer</h2>
+          <h2 class="about__role">Software Developer</h2>
           <p class="about__desc">
-            Promising Backend Developer with civil engineering knowledge as well.
+            Promising Software Developer with civil engineering knowledge as well.
           </p>
 
           <div class="about__contact center">
-            <a href="./Resume.pdf" target="_blank">
+            <a href="./documents/Resume.pdf" target="_blank">
                 <span class="btn btn--outline">Resume</span>
             </a>
             <a href="#contact">
@@ -52,46 +56,93 @@
             </a>
           </div>
         </div>
-        
       </div>
-
-      <div class="empty-row"></div>
+      <div class="divider"></div>
+      
       <!-- About -->
       <section id="info" class="section info">
         <div>
           <h2 class="section__title">About me</h2>
           <section class="subsection">
             <div class="context__overall">
-              <p>pationate about </p>
+              <p>Interested in Full-stack development and AI. </p>
             </div>
             <!-- Details -->
             <div class="tab">
               <div class="tab-titles">
-                <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" data-tab="experience" onclick="opentab('experience')">Experience</p>
-                <p class="tab-links" data-tab="education" onclick="opentab('education')">Education</p>
+                <p class="tab-links active-link" data-tab="skills" onclick="opentab('info', 'skills')">Skills</p>
+                <p class="tab-links" data-tab="experience" onclick="opentab('info', 'experience')">Work Experience</p>
+                <p class="tab-links" data-tab="certification" onclick="opentab('info', 'certification')">Certification</p>
+                <p class="tab-links" data-tab="education" onclick="opentab('info', 'education')">Education</p>
+                <p class="tab-links" data-tab="honours-awards" onclick="opentab('info', 'honours-awards')">Honours and Awards</p>
               </div>
+
               <div class="tab-contents active-tab" id="skills">
                 <ul>
                   <li><span>Front-End</span><br> JavaScript, HTML, CSS</li>
-                  <li><span>Back-End</span><br>Phython, Java, C++</li>
+                  <li><span>Back-End</span><br>Python, Java, C++</li>
                   <li><span>Database Management</span><br>SQL</li>
+
+                  <h5><br>Civil Engineering</h5>
+                  <li><span>Design</span><br>CAD, Train Performance Simulation (TPS)</li>
+                  <li><span>Field</span><br>Electronic Distance Measurement Devices (EDM), Transit Levels</li>
+                  
                 </ul>
               </div>
               <div class="tab-contents" id="experience">
                 <ul>
-                  <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
-                  <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
-                  <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
-                  <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
+                  <li>
+                    <span>2014-2016</span>
+                    <br>
+                    <a href="./documents/Military-Service.pdf" target="_blank">
+                      <u>Served in Military Service -1st Engineer Brigade</u>
+                    </a>
+                  </li>
+
+                  <h5><br>Civil Engineering</h5>
+                  <li><span>2020-2022</span><br>
+                    <a href="./documents/Cereer Certificate_Cheil ENG.pdf" target="_blank">
+                    <u>Worked as Assistant Railway Engineer at Cheil Engineering Co., Ltd.</u></a></li>
+                  <li><span>2014</span><br>Internship as Assistant Civil Engineer at Daekyung General Construction Co., Ltd.</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="certification">
+                <ul>
+                  <li><span>July, 2018</span><br> Computer Specialist in Spreadsheet & Database Level-Ⅱ</li>
+                  <li><span>October, 2023</span><br> G Driver’s License</li>
+
+                  <li><span><br>May, 2019</span><br>Engineer Civil Engineering</li>
+                  <li><span>October, 2013</span><br>Craftsman-Computer Aided Drawing in Civil Engineering (CAD)</li>
                 </ul>
               </div>
               <div class="tab-contents" id="education">
                 <ul>
-                  <li><span>2023 - Current</span><br>Engaged in hands-on software development training at Seneca College</li>
-                  <li><span>2024</span><br>Finalist in a Hackathon Project hosted by Seneca College</li>
-                  <li><span>2024</span><br>Participated in RBC's annual Discovery Day event hosted by the company</li>
-                  <li><span>2020 - 2022</span><br>Intern at the Ukrainian Computer Technological Academy 'STEP'</li>
+                  <li>
+                    <span>Seneca Polytechnic -2026(Expected)</span>
+                    <br>Computer Programming & Analysis
+                    <br>-GPA: 3.9 / 4.0 
+                  </li>
+
+                  <li>
+                    <span><br>Korea National University of Transportation -2020</span>
+                    <br>Railway Civil Engineering
+                    <br><a href="./documents/GPA_Korea National University of Transfortation_Heung Bin Oh.pdf" target="_blank"><u>-GPA: 3.94 / 4.5</u></a> 
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="honours-awards">
+                <ul>
+                  <li><span>March, 2024</span><br><a href="./documents/2024-03-25_2024-housing-hackathon-finalist-en.pdf" target="_blank"><u>Finalist in a Hackathon Project hosted by Seneca Polytechnic</u></a></li>
+                  <li><span>Winter, 2024</span><br><a href="./documents/Presidents_Honour_List.pdf" target="_blank"><u>President's Honour (Seneca Polytechnic)</u></a></li>
+
+                  <h5><br>Civil Engineering</h5>
+                  <li><span>2018-2019</span><br><a href="./documents/National Science & Technology Scholarship.jpg & Technology Scholarship.jpg" target="_blank"><u>National Science & Technology Scholarship</u></a></li>
+                  <li><span>4th semester, 2016</span>
+                    <br>1st place honoured
+                  </li>
+                  <li><span>2013-2016(1st - 3rd semester)</span>
+                    <br>2nd place honoured 3 times
+                  </li>
                 </ul>
               </div>
             </div>
@@ -103,151 +154,143 @@
 
       <div class="divider"></div>
 
-      <!-- Education -->
-      <section class="section" id="education">
-        <div>
-        <h2 class="section__title">Education</h2>
-        <section class="education_list">
-          <section class="education">
-            <h3>Seneca Polytechnic</h3>
-            <p>Computer Programming & Analysis</p>
-            <span>2026 (expected)</span>
-          </section>
-
-          <section class="education">
-            <h3>Korea National University of Transportation</h3>
-            <p>Railway Civil Engineering</p>
-            <span>2020</span>
-          </section>
-        </section>  
-        </div>
-      </section>
-      <div class="divider"></div>
+      
 
       <!-- Projects -->
       <section id="projects" class="section projects">
         <div>
-        <h2 class="section__title">Projects</h2>
+          <h2 class="section__title">Projects</h2>
+          <!-- Project Tab -->
+          <div class="tab">
+            <div class="tab-titles">
+              <p class="tab-links active-link" data-tab="software" onclick="opentab('projects', 'software')">Software</p>
+              <p class="tab-links" data-tab="civil" onclick="opentab('projects', 'civil')">Civil Engineering</p>
+            </div>
+            <!-- Software Section -->
+            <div class="tab-contents active-tab" id="software">
+              <div class="projects__grid">
+                <!-- Project 1 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/kokoa-logo.png" alt="Kokoa Clone Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Kokoa Clone</h3>
+                    <a href="https://heungbin-oh.github.io/kokoa-clone/" class="prj__link" target="_blank">Kokoa Clone link</a>
+                    <p class="project__description">
+                      Create Clone Kokoa pages in mobile size
+                    </p>
+                    <a href="https://github.com/Heungbin-Oh/kokoa-clone" class="prj__link" target="_blank">GitHub link</a>
+                  </div>
+                </div>
 
-        <div class="projects__grid">
-          <div class="project">
-            <h3>WEB Assignment 5</h3>
-            <p class="project__description">
-              Creating website for Iceskating
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Html</li>
-              <li class="project__stack-item">JavaScript</li>
-              <li class="project__stack-item">CSS</li>
-            </ul>
+                <!-- Project 2 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/hackathon-logo.png" alt="Seneca Hackathon Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Seneca Hackathon</h3>
+                    <a href="https://github.com/Heungbin-Oh/Seneca-Hackathon-2024" class="prj__link" target="_blank">GitHub link</a>
+                    <p class="project__description">
+                      Solving Student Housing Issue 2024
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Civil -->
+            <div class="tab-contents" id="civil">
+              <div class="projects__grid">
+                <!--Project 1 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/shinansan_line_logo.png" alt="Seneca Hackathon Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Detailed Design Railway Construction</h3>
+                    <p class="project__description">
+                      <span class="prj_duration">July 2020 - July 2021</span>
+                      <br><br>
+                      Client: Nextrain Co., Ltd 
+                    </p>
+                    <a href="./documents/shinansan.pdf" class="prj__link" target="_blank">Details</a>
+                  </div>
+                </div>
+                <!--Project 2 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/kind_logo.jpeg" alt="Seneca Hackathon Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Pre–F/S Saudi Arabia–Bahrain</h3>
+                    <p class="project__description">
+                      <span class="prj_duration">May 2021 - September 2021</span>
+                      <br><br>
+                      Client: KIND
+                    </p>
+                    <a href="./documents/saudi-arabia__bahrain.pdf" class="prj__link" target="_blank">Details</a>
+                  </div>
+                </div>
+                <!--Project 3 -->
+                <div class="project">
+                  <div class="prj__img">
+                    <img src="img/rahco_logo.jpeg" alt="Seneca Hackathon Project Image">
+                  </div>
+                  <div class="prj__content">
+                    <h3>Design, Supervision and Management of SGR</h3>
+                    <p class="project__description">
+                      <span class="prj_duration">August 2021 - July 2022</span>
+                      <br><br>
+                      Client: Reli Asset Holding Company(RAHCO) 
+                    </p>
+                    <a href="./documents/tanzania.pdf" class="prj__link" target="_blank">Details</a>
+                  </div>
+                </div>
+                
+    
+              </div>
+            </div>
+
+
           </div>
-        </div>
       </section>
+      
       <div class="divider"></div>
 
       
   <!-- Contact -->
-  <section class="section contact" id="contact">
-    <div>
-      <h2 class="section__title">Contact Me</h2>
-      <form id="form">
-        <div>
-          <label for="name">Name *</label>
-          <input value="" name="name" id="name" required />
-        </div>
-        <div>
-          <label for="company">Company *</label>
-          <input value="" name="company" id="company" required />
-        </div>
-        
-        <div>
-          <label for="email">Email Address *</label>
-          <input value="" name="email" id="email" type="email" required />
-        </div>
-        <div>
-          <label for="add">Address *</label>
-          <input value="" name="add" id="add" required />
-        </div>
-        <div>
-          <label for="city">City *</label>
-          <input value="" name="city" list="cities" id="city" required />
-          <datalist id="cities">
-            <option value="Toronto" />
-            <option value="Barrie" />
-            <option value="Vancouver" />
-            <option value="Mississauga" />
-            <option value="Ottawa" />
-          </datalist>
-        </div>
-        <div>
-          <label for="postal">Postal Code *</label>
-          <input
-            value=""
-            name="postal"
-            id="postal"
-            pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"
-            required
-          />
-        </div>
-        <div>
-          <label>What is this about? *</label>
-          <fieldset id="about">
-            <span>
-              <input
-                id="question"
-                type="radio"
-                value="Question"
-                name="about"
-                required
-              />
-              <label for="question">Question</label>
-            </span>
-            <span>
-              <input
-                id="comment"
-                type="radio"
-                value="Comment"
-                name="about"
-                required
-              />
-              <label for="comment">Comment</label>
-            </span>
-            <span>
-              <input
-                id="hiring"
-                type="radio"
-                value="Hiring"
-                name="about"
-                required
-              />
-              <label for="hiring">Hiring</label>
-            </span>
-          </fieldset>
-        </div>
-
-        <div id="rateDiv" style="display: none">
-          <label for="rateInput" id="rateLabel">Hourly Rate *</label>
-          <div>
-            <input type="number" min="0" step="0.25" name="rate" id="rateInput" required />
-          </div>
-        </div>
-      
-        <div>
-          <label for="message">Message *</label>
-          <textarea name="message" id="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn--outline">Submit</button>
-      </form>
+  <div id="contact">
+    <h2 class="section__title">Contact Me!</h2>
+    <div class="contact__box">
+      <div class="contact__context">
+        <i class="fa-regular fa-envelope fa-2x"></i> 
+        <a href="mailto:orane5050@gmail.com" class="contact-link" target="_blank">
+          <span>orane5050@gmail.com</span>
+        </a>
+      </div>
+      <div class="contact__context">
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+        <a href="https://www.linkedin.com/in/%ED%9D%A5%EB%B9%88-%EC%98%A4-25047322a/" class="contact-link" target="_blank">
+          <span>Linkedin</span>
+        </a>
+      </div>
+      <div class="contact__context">
+        <i class="fa-solid fa-phone fa-2x"></i>
+        <span>416-817-7678</span>
+      </div>
     </div>
-  </section>
-
+    
+    
+  </div>
+  
   </main>
 
     <footer class="footer">
     </footer>
 
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
