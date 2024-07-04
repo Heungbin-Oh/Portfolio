@@ -210,9 +210,13 @@ main {
 
 /* Overall context styling */
 .context__overall {
+  display: flex;
+  text-align: end;
   flex-basis: 30%; /* Overall context flex basis */
   margin-right: 15px; /* Overall context margin */
+  margin-top: 40px;
   width: 300px; /* Overall context width */
+  
 }
 
 /* Info tab styles */
