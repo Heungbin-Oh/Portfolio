@@ -88,7 +88,16 @@ button {
   padding: 0 0 0.3em 0;
   position: relative;
 }
+.link--nav{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  transition: transform 0.2s ease-in-out;
+}
 
+.link--nav:hover {
+  transform: translateY(-3px);
+}
 
 .link--icon {
   color: var(--clr-fg);
@@ -209,14 +218,20 @@ main {
   cursor: pointer; 
   position: relative;
 }
-.tab-links::after{
+.tab-links::after {
   content: '';
   width: 0;
   height: 3px;
+  background: var(--clr-primary);
   position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s;
+  left: 50%; 
+  bottom: -4px;
+  transition: width 0.35s ease; 
+  transform: translateX(-50%); 
+}
+
+.tab-links.active-link::after {
+  width: 80%;
 }
 
 #info .tab-contents {
@@ -346,7 +361,8 @@ main {
 }
 
 .about .btn--outline {
-  margin-right: 1em;
+  margin-right: 2em;
+  border-radius: 7px;
 }
 
 .projects__grid {
@@ -355,6 +371,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2em;
+  
 }
 
 .project {
@@ -364,6 +381,7 @@ main {
   text-align: center;
   align-items: center;
   box-shadow: var(--shadow);
+  border-radius: 20px;
   transition: transform 0.2s linear;
 }
 .prj__img{
@@ -417,10 +435,12 @@ main {
 
 
 
+
 #contact {
   display: flex;
   flex-direction: column;
 }
+
 
 
 .contact__box {
@@ -428,10 +448,14 @@ main {
   flex-direction: column;
   padding: 2em;
   margin: 0 auto;
+  border-bottom-right-radius: 40px;
   text-justify: center;
   justify-content: center;
   box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
+  transition: transform 0.2s ease-in-out;
+}
+.contact__box:hover {
+  transform: translateY(-7px);
 }
 .contact__context{
   display: flex;
