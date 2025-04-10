@@ -232,7 +232,7 @@ main {
 }
 
 .tab-links {
-  padding: 10px 20px;
+  padding: 10px 10px;
   cursor: pointer; /* Tab link cursor */
   position: relative;
 }
